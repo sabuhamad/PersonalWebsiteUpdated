@@ -142,7 +142,7 @@ const Resume = () => {
                  Technology Management Technical Breadth
                 </Typography>
                 <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Relevant Courses: Theory of Computing, Algorithms and Complexity, Software Construction, Object-Oriented Programming, Data structures (Intro to CS I and II), Programming Languages, Probability, Discrete Structures, Linear Algebra
+                Relevant Courses: Machine Learning, Data Management Systems, Operating Systems, Algorithms and Complexity, Software Construction, Object-Oriented Programming, Data structures (Intro to CS I and II), Programming Languages, Probability, Discrete Structures, Linear Algebra
                 </Typography>
             </Box>
             <Box component="div" className={classes.timeLineItem}>

@@ -25,6 +25,7 @@ import tic_tac_toe from "../images/tic-tac-toe.jpg"
 import lisp from "../images/lisp.jpg"
 import git from "../images/git.jpg"
 import makefile from "../images/makefile.jpg"
+import minecraft from "../images/minecraft.png"
 //<a href="https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32903009.htm#page=2&query=dark%20gray%20tech%20background&position=39&from_view=search&track=ais">Image by flatart</a> on Freepik
 import back from "../portfolio.jpg"
 const useStyles = makeStyles({
@@ -67,6 +68,33 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
     <Navbar/>
     <Grid container justify="center">
+         {/* Project 1 */}
+        <Grid item xs={12} sm={6} md={4}>
+        <Card className = {classes.cardContainer}>
+                <CardMedia
+                component = "img"
+                alt= "Project 1"
+                height="140"
+                image = {minecraft}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5">
+                      Voxel Voyage
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" components="p">
+                    Created a voxel terrain exploration and construction game similar to Minecraft using the tiny-graphics js library. Incorporated custom first person POV movement controls, mouse tracking, random terrain generation through perlin noise, block generation/deletion, daytime & nighttime tracking and lighting, and more
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://github.com/AdamMuzz/minecraft")}>
+                        View Code
+                    </Button> 
+                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://www.canva.com/design/DAF2RXSfuvw/jrXG70JBFG0j2LWfDz1kPw/view?utm_content=DAF2RXSfuvw&utm_campaign=designshare&utm_medium=link&utm_source=editor")}>
+                        View Presentation
+                    </Button>
+                </CardActions>
+        </Card>
+        </Grid>
         {/* Project 1 */}
         <Grid item xs={12} sm={6} md={4}>
         <Card className = {classes.cardContainer}>
@@ -109,37 +137,13 @@ const Portfolio = () => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://github.com/sabuhamad/Personal-Website/tree/main")}>
+                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://github.com/sabuhamad/PersonalWebsiteUpdated")}>
                         View Code
                     </Button>
                 </CardActions>
         </Card>
         </Grid>
         {/* Project 1 */}
-        <Grid item xs={12} sm={6} md={4}>
-        <Card className = {classes.cardContainer}>
-                <CardMedia
-                component = "img"
-                alt= "Project 1"
-                height="140"
-                image = {quadruped}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5">
-                      Quadruped Robot
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" components="p">
-                    Led a team of engineers to design, construct, and program a sophisticated, walking quadruped robot using Python for the software, 3D printed materials for the body, and a Raspberry Pi as the motherboard
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://github.com/UCLAX1/Boelt-Software")}>
-                        View Code
-                    </Button>
-                </CardActions>
-        </Card>
-        </Grid>
-        {/* Project  */}
         <Grid item xs={12} sm={6} md={4}>
         <Card className = {classes.cardContainer}>
                 <CardMedia
